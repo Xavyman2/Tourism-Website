@@ -56,8 +56,16 @@ nav {
 .logo a {
     font-size: 1.5em;
     font-weight: bold;
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
+    display: block;
+    line-height: 1.2;
+}
+.logo-subtitle {
+    font-size: 0.8em;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
 }
 nav ul {
     list-style: none;
