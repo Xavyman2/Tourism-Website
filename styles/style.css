@@ -120,6 +120,10 @@ nav a {
     height: 200px;
     object-fit: cover;
 }
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
