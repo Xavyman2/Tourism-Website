@@ -206,3 +206,86 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
+    /* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative; /* Needed for positioning the menu button */
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Important for touch targets on mobile */
+    padding: 10px; /* Add some padding for touch targets */
+}
+
+/* Mobile Navigation Styles */
+.menu-toggle {
+    display: none; /* Hide the menu button by default on larger screens */
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Style the hamburger icon (you can use an image or create it with CSS) */
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    nav ul {
+        display: none; /* Hide the full menu on smaller screens */
+        flex-direction: column; /* Stack the menu items vertically */
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa; /* Match header background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0;
+        border-bottom: 1px solid #ddd; /* Add separators between list items */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu button on smaller screens */
+    }
+
+    nav ul.active { /* Show the menu when the button is clicked */
+        display: flex;
+    }
+}
