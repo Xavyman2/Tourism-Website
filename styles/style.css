@@ -316,4 +316,45 @@ nav a {
     nav ul.active { /* Show the menu when the button is clicked */
         display: flex;
     }
+    .destination {
+    text-align: center;
+}
 
+.destination-slideshow {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    margin: 0 auto 1rem;
+    width: fit-content;
+}
+
+.destination-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.destination-title {
+    margin-bottom: 0.5rem;
+}
+
+.destination-description {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    /* other button styles */
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
