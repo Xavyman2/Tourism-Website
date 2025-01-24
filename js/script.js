@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const images = slideshow.querySelectorAll('img');
         let currentImage = 0;
 
-        images[currentImage].style.display = 'block';
+        images[currentImage].style.opacity = 1;
 
         setInterval(() => {
-            images[currentImage].style.display = 'none';
+            images[currentImage].style.opacity = 0;
             currentImage = (currentImage + 1) % images.length;
-            images[currentImage].style.display = 'block';
+            images[currentImage].style.opacity = 1;
         }, 4000);
     });
 });
