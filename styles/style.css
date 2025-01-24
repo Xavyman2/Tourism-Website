@@ -125,3 +125,65 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* About Page Styles */
+.about-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero img {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.about-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.about-content {
+    padding: 40px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style-type: disc; /* Use bullet points for lists */
+    padding-left: 20px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
