@@ -206,7 +206,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-
+}
     /* Navigation Styles */
 nav {
     display: flex;
@@ -288,4 +288,4 @@ nav a {
     nav ul.active { /* Show the menu when the button is clicked */
         display: flex;
     }
-}
+
